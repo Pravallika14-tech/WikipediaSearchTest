@@ -1,0 +1,19 @@
+- Install IntelliJ IDEA Community IDE  Version 2018.3.6.
+- Install OpenJDK 11 and complete the configuration.
+- Install a Browser Driver(Chrome Driver).
+- Setup a Selenium project with the name `WikiSearchTest`.
+- Create a driver instance using WebDriver interface.
+- Navigate to the url `https://qawikisearch.ccbp.tech/`
+- Find the input field with id `searchInput`- _use (Relative) XPath Locator_.
+- Enter the text `HTML` in the input field.
+- Find the 'Search' with class name `search-button`- _use (Relative) XPath Locator_.
+- Click the button - _use `click()` method_.
+- Wait for a maximum of 10 seconds for the search results to be loaded.
+
+    - Wait until the search results (`<div>` elements) with class name `result-item` are loaded,
+    	- _use `visibilityOfElementLocated()` method_
+    	- _use (Relative) XPath Locator_
+- Find all the search results with class name `result-item`- _use (Relative) XPath Locator_.
+- Print "<result count> Results Found"
+	- For example: `3 Results Found`
+- Close the browser window.
